@@ -5,6 +5,13 @@ public class Main {
         System.out.println("Starting Collaboration Demo Backend...");
 
         UserService userService = new UserService();
-        userService.createUser("Shubham", "shubham@gmail.com");
+        boolean isUserCreated = userService.createUser("Shubham", "shubham@gmail.com");
+
+        if (isUserCreated) {
+            System.out.println("User created successfully.");
+        } else {
+            System.out.println("Failed to create user.");
+        }
+
     }
 }
