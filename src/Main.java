@@ -7,6 +7,7 @@ public class Main {
         UserService userService = new UserService();
         boolean isUserCreated = userService.createUser("Shubham", "shubham@gmail.com");
 
+        // Checking the result of user creation
         if (isUserCreated) {
             System.out.println("User created successfully.");
         } else {

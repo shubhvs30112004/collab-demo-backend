@@ -6,6 +6,7 @@ public class UserService {
 
     public boolean createUser(String name, String email) {
 
+        //validating users
         if (!isValid(name, email)) {
             return false;
         }
@@ -19,6 +20,7 @@ public class UserService {
 
     private boolean isValid(String name, String email) {
 
+        // Basic validation checks
         if (name == null || name.isEmpty()) {
             System.out.println("User name cannot be empty");
             return false;
