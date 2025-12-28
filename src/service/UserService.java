@@ -14,7 +14,7 @@ public class UserService {
         User user = new User(name, email);
         System.out.println("Name: " + user.getName());
         System.out.println("Email: " + user.getEmail());
-        System.out.println("[INFO] User created successfully:");
+        System.out.println("User created successfully:");
 
         return true;
     }
